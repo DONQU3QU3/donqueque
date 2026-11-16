@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Inteligente de Mesa | Hora, Temperatura y Lúmenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="logo">LuminaClock</div>
+        <nav>
+            <a href="#caracteristicas">Características</a>
+            <a href="#especificaciones">Especificaciones</a>
+            <a href="#comprar" class="btn-nav">Comprar Ahora</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>El control total de tu entorno en tu escritorio</h1>
+            <p>Hora de alta precisión, monitoreo de temperatura en tiempo real y sensor de lúmenes integrado en un diseño elegante.</p>
+            <a href="#comprar" class="btn-primary">Adquirir el tuyo</a>
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="caracteristicas" class="features">
+        <h2>Diseñado para el espacio moderno</h2>
+        <div class="features-grid">
+
+            <div class="feature-card">
+                <div class="icon">⏰</div>
+                <h3>Hora de Precisión</h3>
+                <p>Formato configurable de 12/24 horas con sincronización exacta y alarma programable.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🌡️</div>
+                <h3>Sensor de Temperatura</h3>
+                <p>Mide la temperatura ambiente al instante en °C o °F para mantener tu confort.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">💡</div>
+                <h3>Medidor de Lúmenes</h3>
+                <p>Detecta el nivel de luz ambiental para ajustar el brillo automáticamente y cuidar tu vista.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Galería / Detalles del Producto -->
+    <section id="especificaciones" class="product-detail">
+        <div class="detail-image-container">
+            <!-- REEMPLAZA LA URL DE ABAJO POR OTRA IMAGEN DETALLADA -->
+            <img src="proyecto sensor.png" alt="Detalle del Sensor de Lúmenes y Temperatura" class="product-img-placeholder">
+        </div>
+        <div class="detail-text">
+            <h2>Luz y clima bajo control</h2>
+            <p>Gracias a su sistema sensorial, el reloj evalúa los lúmenes de tu habitación en tiempo real. Optimiza la iluminación de tu área de trabajo y mantente al tanto de los cambios climáticos dentro de tu hogar u oficina.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Compra / CTA -->
+    <section id="comprar" class="cta-section">
+        <h2>Mejora tu escritorio hoy mismo</h2>
+        <p class="price">$19.999 ARS</p>
+        <!-- Botón con ID para activar el modal -->
+        <button id="btn-comprar" class="btn-primary btn-large">Añadir al Carrito</button>
+    </section>
+
+    <!-- VENTANA EMERGENTE (MODAL) DE MERCADO PAGO -->
+    <div id="modal-pago" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="cerrar-modal">&times;</span>
+            <div class="mp-header">
+                <h3>Transferencia Mercado Pago</h3>
+            </div>
+            <p class="modal-desc">Escanea el código QR desde tu app de Mercado Pago o copia el alias para transferir.</p>
+            
+            <!-- Código QR generado automáticamente con tu Alias -->
+            <div class="qr-box">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=sixnaldo.dasilva.jr" alt="QR Alias Mercado Pago">
+            </div>
+
+            <div class="alias-container">
+                <span class="alias-label">Alias:</span>
+                <strong id="texto-alias">sixnaldo.dasilva.jr</strong>
+                <button id="btn-copiar" class="btn-copy">Copiar</button>
+            </div>
+            <p id="mensaje-copiado" class="copy-feedback">¡Alias copiado al portapapeles!</p>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 LuminaClock Inc. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
